@@ -23,7 +23,8 @@ var User = mongoose.model('User', UserSchema);
 
 var predefined_users = require('./data_source/users');
 var dashes           = require('./data_source/dashes');
-var grapher			 = require('./data_source/graphes');
+var grapher          = require('./data_source/graphes');
+var grapherExt6      = require('./data_source/extjs6_graphes');
 
 var publisher = function(result, message, extra, options){
 	extra = extra || {};
@@ -280,7 +281,7 @@ api.post('/api/getGraph', function *(next){
 	var request = this.request.body;
 	var user = yield User.find({ _id : request.user_token }).exec();
 
-	this.body = grapher.getRandomOne();
+	this.body = grapherExt6.getRandomOne();
 });
 
 //Logger
