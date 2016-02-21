@@ -17,8 +17,8 @@ exports.main_border_panel = {
 		{
 			id:          'MainContainer',
 			title:       'Container',
-			xtype:       'panel',
-			layout:      'column',
+			xtype:       'tabpanel',
+			layout:      'fit',
 			region:      'center',
 			bodyPadding: 10,
 			frame:       true,
