@@ -20,6 +20,7 @@ exports.main_border_panel = {
 			xtype:       'tabpanel',
 			layout:      'fit',
 			region:      'center',
+			activeTab: 	 0,
 			bodyPadding: 10,
 			frame:       true,
 			overflowY:   'auto',

@@ -79,6 +79,7 @@ Ext.define('ExtJS4.controller.MainContainer', {
 
 		container.add(char_container);
 		container.add(grid_container);
+		container.setActiveTab(0);
 
 		var timer = setInterval(function(){
 			if(i < 12){
