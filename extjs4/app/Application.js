@@ -8,8 +8,8 @@ Ext.define('ExtJS4.Application', {
         'ExtJS4.controller.Basic',
         'ExtJS4.controller.MainMenu',
         'ExtJS4.controller.MainContainer',
+        'Ext.util.Point',
         'Ext.chart.*',
-        'Ext.util.Point'
     ],//eo requires
     controllers: [
         'ExtJS4.controller.Main'

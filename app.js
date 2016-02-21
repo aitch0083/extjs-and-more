@@ -13,8 +13,11 @@ var db       = mongoose.connection;
 var app      = koa();
 
 var UserSchema = mongoose.Schema({
-	username : String,
-	password : String
+	username: String,
+	password: String,
+	first:    String,
+	last:     String,
+	email:    String
 });
 var User = mongoose.model('User', UserSchema);
 
@@ -75,6 +78,133 @@ api.get('/api/getRandomData', function(){
     });
 });
 
+api.post('/api/users/:action', function *(next){
+
+	var action  = this.params.action;
+	var request = this.request.body;
+	var page    = request.page;
+	var start   = request.start;
+	var limit   = request.limit;
+	var result  = {
+		success: false,
+		message: '',
+		records: [],
+		total:   0,
+		error:   ''
+	};
+
+	//console.info('request body:', request);
+
+	switch(action){
+		case 'view':
+			var users = yield User.find(null, { password: 0 }).limit(limit).skip(start).exec();
+			var total = yield User.count().exec();
+
+			result.records = users;
+			result.total   = total;
+			result.success = total ? true : false;
+			result.message = 'Users are in the house now';
+
+			delete result.error;
+
+			break;
+		case 'update':
+
+			var records = request.records;
+
+			if(_.isArray(records)){
+				records.forEach(function(ele, idx){
+
+					User.update({_id: ele._id}, ele).exec();
+
+				});//eo forEach
+
+				result.total   = records.length;
+				result.success = records.length ? true : false;
+				result.message = 'Users are updated';
+
+			}else{
+				User.update({_id: records._id}, records).exec();
+				result.total   = 1;
+				result.success = true;
+				result.message = 'User is updated';
+			}
+
+			break;
+		case 'create':
+			var records = request.records;
+
+			if(_.isArray(records)){
+				var new_user = null;
+
+				records.forEach(function(ele, idx){
+
+					new_user = new User({
+						username: ele.username,
+						password: 1000 + Math.random() * 1000,
+						email: ele.email,
+						first: ele.first,
+						last: ele.last
+					});
+					new_user.save();
+
+				});//eo forEach
+
+				result.total   = records.length;
+				result.success = records.length ? true : false;
+				result.message = 'Users are created';
+
+			}else{
+
+				var new_user = new User({
+					username: records.username,
+					password: 1000 + Math.random() * 1000,
+					email: records.email,
+					first: records.first,
+					last: records.last
+				});
+				new_user.save();
+
+				result.total   = 1;
+				result.success = true;
+				result.message = 'User is created';
+			}
+
+			break;
+		case 'destroy':
+
+			var records = request.records;
+
+			if(_.isArray(records)){
+				records.forEach(function(ele, idx){
+
+					User.find({_id: ele._id}).remove().exec();
+
+				});//eo forEach
+
+				result.total   = records.length;
+				result.success = records.length ? true : false;
+				result.message = 'Users are removed';
+
+			}else{
+				User.find({_id: records._id}).remove().exec();
+				result.total   = 1;
+				result.success = true;
+				result.message = 'User is removed';
+			}
+
+			break;
+		default:
+			break;
+
+	}
+
+	this.type   = 'json';
+	this.status = 200;
+	this.body   = JSON.stringify(result);
+});
+
+
 /**
  * (POST) Return the config JSON string for the dashboards
  */
@@ -104,6 +234,9 @@ api.post('/api/login', function *(next){
 			var user = { 
 				_id:        user[0]._id,      
 				username:   user[0].username,
+				email:      user[0].email,
+				first:      user[0].first,
+				last:       user[0].last,
 				login_time: moment().format('YYYY MMM Do H:s')
 			};
 
@@ -176,17 +309,19 @@ db.on('error', console.error.bind(console, 'connection error:'));
 db.once('open', function(){
 	if(_.isArray(predefined_users)){
 		predefined_users.forEach(function(user_rec){
-			var user = User.find(user_rec, function(err, u){
+			var user = User.find({email: user_rec.email}, function(err, u){
 				if(!u.length){
 					var new_user = new User(user_rec);
 					new_user.save();
 
 					console.info('User does not exist, create new one');
 				}else{
-					console.info(user_rec.username, ' exists');
+					//console.info(user_rec.username, ' exists');
 				}//eo if-else
 			});//eo User.find
 		});//eo forEach
 	}//eo if
+
+	console.info('MongoDB is goot to go ------------------------------- | (• ◡•)| (❍ᴥ❍ʋ) ');
 });//eo open event
 mongoose.connect('mongodb://localhost/data');

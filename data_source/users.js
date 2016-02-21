@@ -1,6 +1,5 @@
 module.exports = [
-	{ username: 'aitch', 	  password: 1234 },
-	{ username: 'Aitch Zung', password: 1234 },
-	{ username: 'David Wang', password: 1234 },
-	{ username: 'Larry Chen', password: 1234 },
+	{ username: 'Aitch', 	  password: 1234, email: 'aitch@server.com', first:'aitch', last:'zung' },
+	{ username: 'David Wang', password: 1234, email: 'david@server.com', first:'david', last:'wang' },
+	{ username: 'Larry Chen', password: 1234, email: 'larry@server.com', first:'larry', last:'chen' },
 ];
