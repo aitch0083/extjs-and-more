@@ -8,11 +8,13 @@ Ext.define('ExtJS5.Application', {
         'ExtJS5.controller.Basic',
         'ExtJS5.controller.MainMenu',
         'ExtJS5.controller.MainContainer',
+        'ExtJS5.controller.Master',
         'Ext.util.Point',
         'Ext.chart.*',
     ],//eo requires
     controllers: [
-        'ExtJS5.controller.Main'
+        'ExtJS5.controller.Main',
+        'ExtJS5.controller.Master',
     ],//eo controllers
     views:       [
         'ExtJS5.view.LoginForm'

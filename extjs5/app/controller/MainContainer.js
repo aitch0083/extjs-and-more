@@ -4,7 +4,9 @@ Ext.define('ExtJS5.controller.MainContainer', {
 	requires: [
 		'Ext.tree.Panel',
 		'Ext.tab.Panel',
-		'Ext.fx.target.Sprite'
+		'Ext.fx.target.Sprite',
+		'ExtJS5.view.Detail',
+		'ExtJS5.view.Master'
 	],
 
 	listeners: {
@@ -16,7 +18,9 @@ Ext.define('ExtJS5.controller.MainContainer', {
 	},
 
 	views:[
-		'UserGrid'
+		'UserGrid',
+		'Detail',
+		'Master'
 	],
 
 	stores: [
@@ -29,7 +33,8 @@ Ext.define('ExtJS5.controller.MainContainer', {
 		'ExtJS5.store.chart.IncomeRecords2',
 		'ExtJS5.store.chart.RadarRecords',
 		'ExtJS5.store.chart.RadarRecords2',
-		'Users'
+		'Users',
+		'People'
 	],
 
 	init: function(config){
@@ -77,8 +82,19 @@ Ext.define('ExtJS5.controller.MainContainer', {
 			]
 		});
 
+		var people_container = Ext.create('Ext.panel.Panel', {
+			layout: 'column',
+			title: 'MVVM - Example',
+			glyph: 120,
+			items: [
+				{xtype: 'extjs5-master-grid', flex: 2},
+				{xtype: 'extjs5-detail-form', flex: 1}
+			],
+		});
+
 		container.add(char_container);
 		container.add(grid_container);
+		container.add(people_container);
 		container.setActiveTab(0);
 
 		var timer = setInterval(function(){
