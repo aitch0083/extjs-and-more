@@ -1,0 +1,28 @@
+<h3  class="ui header">
+	<i class="newspaper icon"></i>
+	<div class="content">{{config.newsLabel}}</div>
+	<div class="sub header">News refresh every {{config.newsRefreshInterval/1000}} seconds.</div>
+</h3>
+
+<table class="ui compact table">
+	<tr>
+		<th>Date</th>
+		<th>Title</th>
+	</tr>
+	<tr ng-repeat="record in models.rssFeed">
+		<td>{{record.publishedDate}}</td>
+		<td>
+			<a class="clickable" ng-click="commander.showNews(record)">{{record.title}}</a>
+		</td>
+	</tr>
+</table>
+
+<div class="ui modal news-modal">
+  <i class="close icon"></i>
+  <div class="header">
+    {{models.targetNews.title}}
+  </div>
+  <div class="content">
+    <div class="description" ng-bind-html="models.targetNews.content"></div>
+  </div>
+</div>

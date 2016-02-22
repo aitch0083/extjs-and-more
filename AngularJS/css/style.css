@@ -1,0 +1,28 @@
+table th{
+	text-align: left !important;
+	padding-left: 1em;
+}
+.clickable{
+	cursor: pointer;
+}
+.card .description{
+	text-align: center;
+}
+.ext-card{
+	margin-top: 20px !important;
+}
+.ext-card legend{
+	text-align : center;
+	background : #DDD;
+	padding    : 1em;
+	font-weight: bold;
+	width	   : 100%; 
+}
+.ext-card .content .description{
+	border: 1px solid #BBB;
+  	height: 8em;
+  	padding-top: 3.1em;
+}
+.sub{
+	text-align: left !important;
+}

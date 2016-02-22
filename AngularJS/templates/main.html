@@ -1,0 +1,79 @@
+<h3  class="ui header">
+	<i class="browser icon"></i>
+	<div class="content">{{config.title}}</div>
+	<div class="sub header">Currency rates refresh every {{config.currencyRefreshInterval/1000}} seconds.</div>
+</h3>
+		
+<div class="ui centered grid main segment full height">
+	<div class="one column centered row">
+	    <div class="ui form column">
+			<legend></legend>
+		    <div class="inline field">
+		      <label>{{config.amountLabel}} : </label>
+		      <input id="amountTxt" type="number" placeholder="positive number only..." ng-model="models.userInputAmount" number-only focus-item>
+		    </div>
+		</div>
+	</div>
+    <div class="three column centered row">
+	  <div class="column ext-card" ng-repeat="ext in models.availableCurrencyList">
+	  	<legend>{{ ext.from + '/' + ext.to }}</legend>
+	  	<div class="ui two column grid">
+		  	<div class="card column">
+			    <div class="content">
+			      <div class="description">
+			        {{ext.bid}}
+			      </div>
+			    </div>
+			    <div class="ui bottom attached button green" ng-click="commander.bidSell('bid',ext)">
+			      <i class="add icon"></i>
+			      Bid
+			    </div>
+			</div>
+			<div class="card column">
+			    <div class="content">
+			      <div class="description">
+			        {{ext.sell}}
+			      </div>
+			    </div>
+			    <div class="ui bottom attached button red" ng-click="commander.bidSell('sell',ext)">
+			      <i class="dollar icon"></i>
+			      Sell
+			    </div>
+			</div>
+		</div>
+	  </div>
+	</div>
+</div>
+
+<h5>
+	Transaction History
+	<div class="ui icon button tiny help-popup" ng-click="commander.removeAllRecords()" data-content="Empty all the history" data-variation="inverted">
+		<i class="trash icon"></i>
+	</div>
+</h5>
+<table class="ui compact table">
+	<tr>
+		<th>ID</th>
+		<th>Order</th>
+		<th>Currencies</th>
+		<th>Amount</th>
+		<th>Price</th>
+		<th>Sum</th>
+		<th>Date Time</th>
+		<th>Action</th>
+	</tr>
+	<tr ng-repeat="record in models.transactionList" ng-class="record.cmd === 'sell' ? 'negative' : 'positive'">
+		<td>{{$index + 1}}</td>
+		<td>{{record.cmd.capitalizeFirstLetter()}}</td>
+		<td>{{record.currencies}}</td>
+		<td>{{record.amount}}</td>
+		<td>{{record.price}}</td>
+		<td>{{record.sum}}</td>
+		<td>{{record.datetime}}</td>
+		<td>
+			<div class="ui icon button tiny" ng-click="commander.removeRecord($index, record)">
+ 				<i class="remove icon"></i>
+			</div>
+		</td>
+	</tr>
+</table>
