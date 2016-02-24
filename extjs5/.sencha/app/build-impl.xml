@@ -332,11 +332,11 @@ this file in most cases.
     <target name="slice" 
             depends="init" 
             description="Slices CSS3 theme to produce non-CSS3 images and sprites.">
-        <x-ant-call unless="skip.slice">
+        <!-- <x-ant-call unless="skip.slice">
             <target name="-before-slice"/>
             <target name="-slice"/>
             <target name="-after-slice"/>
-        </x-ant-call>
+        </x-ant-call> -->
     </target>
 
     <!--

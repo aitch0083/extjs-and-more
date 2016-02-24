@@ -281,8 +281,8 @@ api.post('/api/getGraph', function *(next){
 	var request = this.request.body;
 	var user = yield User.find({ _id : request.user_token }).exec();
 
-	 this.body = grapherExt6.getRandomOne();
-	//this.body = grapher.getRandomOne();
+	 // this.body = grapherExt6.getRandomOne();
+	this.body = grapher.getRandomOne();
 });
 
 //Logger

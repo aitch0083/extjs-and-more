@@ -16,7 +16,7 @@
       "cbdf9712e9b5d37cecb4d0530ba1fccd0ed004a3": "eJytkUEOwjAMBO+8YkXv/QF/4MAHAnGpRbArxy3i97gFQbk3t6ycmbXS4LDl2TU49VzRcSEMphNnqkgCncgsLhiUxdGpIVOXxuKYknE6l5iLhIUyWBCgeJ7Hi7NK+xmtbWQDmTPVNkRUF8knQTKCSnmC74OaB+jRk+A8csks10DOWu8J+x97D5KJTeVO4u2uianjD7lq5N+9PN1mL6uxP5fN3o5Vuwh87hO0pVHRlAMz+//cy7sa2o2/4QV6LJW9"
     },
     "sencha.cfg.tpl.merge": {
-      "b273c6b02ee9e9c3fb170493c110d78bda9eb107": "eJytVE1vEzEQvedXjFQOrdRuekNChAPcOKBKcOTi2LMbp17bsr35oOp/5403u6SkcIFISbye2ffePM/4ir5tmLzqmUJLBWsVo7NaFRv8AutGYqsn+X1eLK4u0tuEh31IjzRkNrQ+/g5C13wotKQSBr25qZDzO6unefnlnCCqsrnON3jnBdJW7VTWycZCOQxJc6ZrHfpeUeaokipsRgLtVM4Csnrzfbi/f/tRNo1Nz0ssbl/Za7Z54k4hlFohADSLBBRG+w176pFpfUdZ50yJJw1I2WaqnJyBYn31ION5mZMm5c34sFOJwMi6hGSRKsQSaGa6M6MfIF+gJYHS4JgMt9bb6kRrHYh1SFARgzeiCrmfYdDX0aCTnOYXCaS8asmk84IUcq1a/zsxcP5MjOAFcTt4XdnEud4e7In3DJPLX4pBcKmca+SczsHRiEnBSzTpWAf2rNduMIx/PMixdey5ttKoRQff2q5J61sAvQeP9MeHkWeO0d46R2ue0AypoYQeXauh40i2pQjD2Jdakgm1T7w0GiMZzHg3R9a2tWwaxOZCRW2t9LXhQ8s8qo5FZFE4IjkMbOOLnNqlbUjTQFbzamgFI+7q6q6eltUjuM2QGSKnciStvIjqg6maRKPeKN9VdNQZh7GWMBRZRpEhphKQ6k1wmgLMZ5TtOqfeNLgOuncIGj40KsfD7Wm9zZGapqFxgAVuvHnG6Kb0TjSWFxonxzIp+u0eIGdzEZvEu3xmEEBeTK4O8Uino18P1pl5Qo9VyZTcVKCLfpuxoG71Xz8Q+mnI6CJ6GOuVOu/owcmtpGvE/qj3YsZBubAfzXHW10tL7YLF8HDqGEjSqbhGS0anYhY87znRjlOW1xc/AS5+GKc\u003d"
+      "1c7f5ae081f77dc98a5ac4f9769c304bf3f56ba9": "eJytVE1vEzEQvedXjFQOrdRuekNChAPc4FIJjlwce3bj1GtbtjcfVP3vvPFml5QULhApie0Zv3nzPDNX9G3D5FXPFFoqWKsYndWq2OAXWDdiWz3J7/NicXXh3iZs9iE90pDZ0Pr4Owhd86HQkkoY9OamQs53Vk/z8gsfZ/yoyuY63+DKC6Ct2qmsk42FchiS5kzXOvS9osxRJVXYjPjaqZwFZPXm+3B///ajHBqbnpdY3L5y1mzzFDuFUGqCANAsFJAX7TfsqYen9R1lnTMlnjjAZZupxuQMFOurBBn7ZU6alDfjZqcSISLrEpKFqwQWQzOHO9P5AfQFWhwoDY7JcGu9rUq01iGwDgksYvBGWMH3MwT6Ogp0otP8CgIqr0oy8bwICrpWrf89MHD+HBjGi8Dt4HWNJsr19mBPcc8wufwlGRiXyrlG3ukcHHWYFLREjY554Mx67QbD+MdGnq1jz7WURi46+NZ2TVrfAug94kh9fBjjzDbaW+dozROaITWU0KNqNXgcybYUIRj7UlMyodaJl0JjOCMy7ubI2raWTQPbnKiwrZm+1nsomUfVsZAsCk8kj4FjfOFTq7QNaerHKl41rSDEXV3d1deyegS3GTRD5FSOpJUXUn0wlZNw1Bvlu4qOPOMw5hKGIssoNERUAlIdBKcuQH9GOa596k2DadC9g9HwoVE5Hm5P622O1DQNjQ0scOPgGa2b0jvhWF5wnBTLpOi3OUDO5iIyiXb5TCCAvOhcHeKRTk+/Hqwzc4ceK5PJualAF/U2Y4Hd6r9+QPTTkFFF9DDmK3ne0YOTqaSrxf6oczHjoVzYj+I46+vQUrtg0TycOgaSVCrGaMmoVPSC5z0n2nHKcn3xExsLGE8\u003d"
     },
     "testing.properties.merge": {
       "360e715956c81757e53736789fe20be045acb544": "eJytkMENwjAMRe+d4oveuwE7cGCBoLjUItiVY4q6PW6pKAM0t1g/732nxfnI07S4DlzRcyGMphNnqkgCncgsLhiVxdGrIVOfXsUxJeN0K5GLCQtlsCBATtVZ7t2Wq13wRjJnql1YqK6GbYJkBJUyg5+jmgflPZDg9uKSgxK8xekD4bSBTyCZ2FSeJN41bUQuO++vi/828vRYpKzGPq87fQV/1WLgS5mgrXWKphyYRb6L10c1nAf//gdqIpHi"
@@ -50,6 +50,7 @@
         "controllerFileName": "Main",
         "controllerName": "Main",
         "controllerNamespace": "ExtJS4.controller",
+        "frameworkKey": "ext",
         "frameworkName": "ext",
         "frameworkPath": "ext",
         "library": "all",
@@ -76,6 +77,7 @@
         "controllerFileName": "Main",
         "controllerName": "Main",
         "controllerNamespace": "ExtJS4.controller",
+        "frameworkKey": "ext",
         "frameworkName": "ext",
         "frameworkPath": "ext",
         "library": "all",
@@ -102,6 +104,7 @@
         "controllerFileName": "Main",
         "controllerName": "Main",
         "controllerNamespace": "ExtJS4.controller",
+        "frameworkKey": "ext",
         "frameworkName": "ext",
         "frameworkPath": "ext",
         "library": "all",
@@ -128,6 +131,7 @@
         "controllerFileName": "Main",
         "controllerName": "Main",
         "controllerNamespace": "ExtJS4.controller",
+        "frameworkKey": "ext",
         "frameworkName": "ext",
         "frameworkPath": "ext",
         "library": "all",
@@ -154,6 +158,7 @@
         "controllerFileName": "Main",
         "controllerName": "Main",
         "controllerNamespace": "ExtJS4.controller",
+        "frameworkKey": "ext",
         "frameworkName": "ext",
         "frameworkPath": "ext",
         "library": "all",
@@ -170,7 +175,7 @@
     },
     ".sencha/app/sencha.cfg": {
       "source": "sencha.cfg.tpl.merge",
-      "version": "b273c6b02ee9e9c3fb170493c110d78bda9eb107",
+      "version": "1c7f5ae081f77dc98a5ac4f9769c304bf3f56ba9",
       "parameters": {
         "appControllers": "",
         "appModels": "",
@@ -180,6 +185,7 @@
         "controllerFileName": "Main",
         "controllerName": "Main",
         "controllerNamespace": "ExtJS4.controller",
+        "frameworkKey": "ext",
         "frameworkName": "ext",
         "frameworkPath": "ext",
         "library": "all",
@@ -206,6 +212,7 @@
         "controllerFileName": "Main",
         "controllerName": "Main",
         "controllerNamespace": "ExtJS4.controller",
+        "frameworkKey": "ext",
         "frameworkName": "ext",
         "frameworkPath": "ext",
         "library": "all",
@@ -232,6 +239,7 @@
         "controllerFileName": "Main",
         "controllerName": "Main",
         "controllerNamespace": "ExtJS4.controller",
+        "frameworkKey": "ext",
         "frameworkName": "ext",
         "frameworkPath": "ext",
         "library": "all",
@@ -258,6 +266,7 @@
         "controllerFileName": "Main",
         "controllerName": "Main",
         "controllerNamespace": "ExtJS4.controller",
+        "frameworkKey": "ext",
         "frameworkName": "ext",
         "frameworkPath": "ext",
         "library": "all",
@@ -284,6 +293,7 @@
         "controllerFileName": "Main",
         "controllerName": "Main",
         "controllerNamespace": "ExtJS4.controller",
+        "frameworkKey": "ext",
         "frameworkName": "ext",
         "frameworkPath": "ext",
         "library": "all",
@@ -310,6 +320,7 @@
         "controllerFileName": "Main",
         "controllerName": "Main",
         "controllerNamespace": "ExtJS4.controller",
+        "frameworkKey": "ext",
         "frameworkName": "ext",
         "frameworkPath": "ext",
         "library": "all",

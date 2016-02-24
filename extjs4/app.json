@@ -4,5 +4,7 @@
     "requires": [
     ],
 
-    "id": "11abe23d-e7d7-41a4-813c-39645f8ad328"
+    "id": "11abe23d-e7d7-41a4-813c-39645f8ad328",
+
+    "theme": "theme-dark"
 }

@@ -3,7 +3,7 @@ var graphes = [
  		xtype: 'chart',
  		style: 'background:#fff',
         animate: true,
-        store: 'ExtJS5.store.chart.HitRecords',
+        store: 'ExtJS4.store.chart.HitRecords',
         legend: {
             position: 'bottom'
         },
@@ -50,7 +50,7 @@ var graphes = [
     	style: 'background:#fff',
         animate: true,
         defaultInsets: 30,
-        store: 'ExtJS5.store.chart.Browsers',
+        store: 'ExtJS4.store.chart.Browsers',
         legend: {
             position: 'right'
         },
@@ -99,7 +99,7 @@ var graphes = [
     { //chart3
      	xtype: 'chart',
         animate: true,
-        store: 'ExtJS5.store.chart.IncomeRecords',
+        store: 'ExtJS4.store.chart.IncomeRecords',
         shadow: true,
         legend: {
             position: 'right'
@@ -139,7 +139,7 @@ var graphes = [
         style: 'background:#fff',
         insetPadding: 10,
         animate: true,
-        store: 'ExtJS5.store.chart.RadarRecords',
+        store: 'ExtJS4.store.chart.RadarRecords',
         legend: {
             position: 'right'
         },
@@ -182,7 +182,7 @@ var graphes = [
         theme: 'Category2',
         insetPadding: 20,
         animate: true,
-        store: 'ExtJS5.store.chart.RadarRecords2',
+        store: 'ExtJS4.store.chart.RadarRecords2',
         legend: {
             position: 'right'
         },
@@ -223,7 +223,7 @@ var graphes = [
     	xtype: 'chart',
         animate: true,
         shadow: true,
-        store: 'ExtJS5.store.chart.IncomeRecords2',
+        store: 'ExtJS4.store.chart.IncomeRecords2',
         axes: [{
             type: 'Numeric',
             position: 'left',
@@ -268,7 +268,7 @@ var graphes = [
             easing: 'elasticIn',
             duration: 1000
         },
-        store: 'ExtJS5.store.chart.HitRecords2',
+        store: 'ExtJS4.store.chart.HitRecords2',
         insetPadding: 25,
         flex: 1,
         axes: [{
@@ -290,7 +290,7 @@ var graphes = [
         xtype: 'chart',
         style: 'background:#fff',
         animate: true,
-        store: 'ExtJS5.store.chart.HitRecords3',
+        store: 'ExtJS4.store.chart.HitRecords3',
         insetPadding: 25,
         flex: 1,
         axes: [{
@@ -315,7 +315,7 @@ var graphes = [
             easing: 'bounceOut',
             duration: 500
         },
-        store: 'ExtJS5.store.chart.HitRecords4',
+        store: 'ExtJS4.store.chart.HitRecords4',
         insetPadding: 25,
         flex: 1,
         axes: [{
@@ -338,7 +338,7 @@ var graphes = [
         style: 'background:#fff',
         animate: true,
         theme: 'Category1',
-        store: 'ExtJS5.store.chart.HitRecords4',
+        store: 'ExtJS4.store.chart.HitRecords4',
         axes: [{
             type: 'Numeric',
             position: 'left',

@@ -1,0 +1,11 @@
+$toolbar-footer-background-color: #dff0d8 !default;
+
+@include extjs-panel-ui(
+    $ui-label: 'loginform-framed',
+    $ui-border-color: #3c763d,
+    $ui-header-background-color: #dff0d8,
+    $ui-header-border-color: #d6e9c6,
+    $ui-body-border-color: #d6e9c6,
+    $ui-border-width: 1px,
+    $ui-border-radius: 5px
+);

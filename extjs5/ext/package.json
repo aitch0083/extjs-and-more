@@ -11,5 +11,13 @@
     "sencha-core"
   ],
   "local": true,
-  "output": "${package.dir}/build"
+  "output": "${package.dir}/build",
+  "slicer": {
+    "js": [
+      {
+      "path": "${package.dir}/sass/example/custom.js",
+      "isWidgetManifest": true
+      }
+    ]
+  }
 }
