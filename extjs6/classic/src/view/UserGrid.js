@@ -12,6 +12,8 @@ Ext.define('ExtJS6.view.UserGrid', {
 
     title: 'Users',
 
+    itemId: 'UserGrid',
+
     initComponent: function(){
         
         this.editor = Ext.create('Ext.grid.plugin.CellEditing');
@@ -19,7 +21,7 @@ Ext.define('ExtJS6.view.UserGrid', {
         Ext.apply(this, {
             iconCls: 'icon-grid',
             frame: true,
-            plugins: [this.editor],
+            plugins: [this.editor, /*{ ptype: 'gridexporter' }*/],
             dockedItems: [{
                 xtype: 'toolbar',
                 items: [{
@@ -80,7 +82,23 @@ Ext.define('ExtJS6.view.UserGrid', {
                     text: 'Sync',
                     scope: this,
                     handler: this.onSync
-                }]
+                }, /*'|', {
+                        iconCls: 'fa fa-paper',
+                        text: 'Export',
+                        scope: this,
+                        handler: function(){
+                            var grid = Ext.ComponentQuery.query('userGrid');
+
+                            console.info(grid);
+
+                            grid.saveDocumentAs({
+                                 type: 'excel',
+                                 title: 'Export Example',
+                                 fileName: 'export.xls'
+                            });
+                        }
+                    }*/
+                ]
             }],
             columns: [{
                 text:         'ID',

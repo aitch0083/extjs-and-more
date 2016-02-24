@@ -5,5 +5,5 @@
  * to the most recently built CSS file for the application to allow index.html
  * in the development directory to load properly (i.e., "dev mode").
  */
-@import 'build/development/ExtJS6/modern/resources/ExtJS6-all.css';
+@import 'build/production/ExtJS6/classic/resources/ExtJS6-all.css';
 

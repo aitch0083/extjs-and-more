@@ -62,7 +62,8 @@
      */
     "requires": [
         "font-awesome",
-        "charts"
+        "charts",
+        //"exporter"
     ],
 
     "compatibility" : {
