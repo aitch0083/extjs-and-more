@@ -4,6 +4,6 @@ Ext.define('ExtJS5.view.DetailViewModel', {
 	alias: 'extjs5-viewmodel-detailviewmodel',
 
 	data: {
-		record: null
+		magic_record: null
 	}
 });

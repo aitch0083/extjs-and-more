@@ -18,7 +18,7 @@ describe("Basic Assumptions", function() {
     it("Basic has defined the alias", function(){
     	var Ctrl = ExtJS4.app.getController('Basic');
 
-    	expect(Ctrl.alias).toEqual(['basic']);
+    	expect(Ctrl.alias).not.toEqual(['basic']);
     	expect(Ctrl.alias).toContain('basic');
     })
 });

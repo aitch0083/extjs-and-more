@@ -98,7 +98,7 @@ Ext.define('ExtJS5.controller.MainContainer', {
 		container.setActiveTab(0);
 
 		var timer = setInterval(function(){
-			if(i < 12){
+			if(i < 32){
 				i++;
 				char_container.add({
 					xtype:'panel',

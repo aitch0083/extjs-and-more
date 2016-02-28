@@ -17,6 +17,6 @@ Ext.define('ExtJS5.controller.Master', {
     onGridSelect : function(grid, record, index, eOpts) {
         var detailView = Ext.ComponentQuery.query('extjs5-detail-form')[0];
 
-        detailView.getViewModel().setData({ record: record });
+        detailView.getViewModel().setData({ magic_record: record });
     }
 });

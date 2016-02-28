@@ -3,13 +3,13 @@ Ext.define('ExtJS5.view.Detail', {
 	
 	alias: 'widget.extjs5-detail-form',
 
-	requires: [
-		'ExtJS5.view.DetailViewModel'
-	],
-
 	title: 'Detail Form',
 	frame: true,
 	padding: 10,
+
+    requires: [
+        'ExtJS5.view.DetailViewModel'
+    ],
 
 	viewModel: [
 		{ type: 'extjs5-viewmodel-detailviewmodel' }
@@ -20,22 +20,22 @@ Ext.define('ExtJS5.view.Detail', {
 	items : [
         {
             xtype      : 'textfield',
-            bind       : '{record.name}',
+            bind       : '{magic_record.name}',
             fieldLabel : 'Name'
         },
 		{
             xtype      : 'textfield',
-            bind       : '{record.email}',
+            bind       : '{magic_record.email}',
             fieldLabel : 'Email'
         },
         {
             xtype      : 'textfield',
-            bind       : '{record.phone}',
+            bind       : '{magic_record.phone}',
             fieldLabel : 'Phone'
         },
         {
             xtype : 'hiddenfield',
-            bind  : '{record.id}'
+            bind  : '{magic_record.id}'
         },
         {
             xtype  : 'button',
